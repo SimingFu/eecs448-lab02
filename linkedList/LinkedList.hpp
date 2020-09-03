@@ -96,7 +96,7 @@ void LinkedList<T>::addFront(T value)
 	m_size++;
 }
 
-template <typename T>secondintoLast
+template <typename T>
 bool LinkedList<T>::removeBack()
 {
 	Node<T>* lastNode = nullptr;
