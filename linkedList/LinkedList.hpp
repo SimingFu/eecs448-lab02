@@ -40,7 +40,7 @@ bool LinkedList<T>::search(T value) const
 
 	while(temp != nullptr){
 		if (temp->getValue() == value){
-			isfound = true;
+			isFound = true;
 		}
 		temp = temp->getNext();
 	}
@@ -96,7 +96,7 @@ void LinkedList<T>::addFront(T value)
 	m_size++;
 }
 
-template <typename T>
+template <typename T>secondintoLast
 bool LinkedList<T>::removeBack()
 {
 	Node<T>* lastNode = nullptr;
@@ -115,7 +115,7 @@ bool LinkedList<T>::removeBack()
 		secondintoLast = m_front;
 		lastNode = secondintoLast->getNext();
 		while (lastNode->getNext() != nullptr){
-			secondintiLast = lastNode;
+			secondintoLast = lastNode;
 			lastNode = lastNode->getNext();
 		}
 		if(lastNode->getNext() == nullptr){
